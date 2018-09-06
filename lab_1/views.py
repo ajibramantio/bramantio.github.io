@@ -3,7 +3,7 @@ from datetime import datetime, date
 # Enter your name here
 mhs_name = 'Bramantio Krisno Aji' # TODO Implement this
 curr_year = int(datetime.now().strftime("%Y"))
-birth_date = date(1999, 08, 06) #TODO Implement this, format (Year, Month, Date)
+birth_date = date(1999, 8, 6) #TODO Implement this, format (Year, Month, Date)
 npm = 1706024495 # TODO Implement this
 # Create your views here.
 def index(request):
