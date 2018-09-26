@@ -1,0 +1,158 @@
+div.home {
+    background: url(https://image.ibb.co/kzEu9z/belitung1.jpg) fixed;
+    width: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face {
+    font-family: "Ropa Sans";
+    src: url(https://www.wfonts.com/download/data/2016/06/07/ropa-sans/RopaSans-Italic.ttf) format("truetype");
+}
+h3.atas { 
+    padding-top: 160px;
+    font-family: "Ropa Sans", Verdana, Tahoma;
+    text-align: center;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+h2.atas {
+    font-family: "Ropa Sans", Verdana, Tahoma;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-bottom: 280px;
+}
+body {
+    background-color: #0DB7ED;
+    width: 100vw;
+}
+.about, div.skill {
+    text-align: center;
+}
+h1 {
+    font-family: "Ropa Sans", Verdana, Tahoma;
+    width: 100vh;
+}
+h1.about {    
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #384D54;
+}
+h1.skill {
+    margin-top: 15px;
+    margin-bottom: 95px;
+    color: #384D54;
+}
+h1.contact {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+div.about #fotoabout {
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 35px;
+    box-shadow: 2px 2px 8px #384D54;
+}
+.txt, p {
+    font-family: "Ropa Sans", Verdana, Tahoma;
+    text-align: center;
+    color: #384D54;
+}
+p {
+    margin-top: 40px;
+    /*font-size: 15px;*/
+    font: small;
+}
+div.experience, div.bawah {
+    background: #384D54;
+    text-align: center;
+    font-family: "Ropa Sans", Verdana, Tahoma;
+    color: #0DB7ED;
+    max-width: 100vh;
+}
+h1.experience, h1.register {
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-bottom: 55px;
+}
+.column, .column2, .column3 {
+    float: left;
+    padding-bottom: 20px;
+    display: inline-block;
+    table-layout: fixed;
+    margin-left: 20px;
+}
+.column {
+    width: 48%;
+}
+.column2 {
+    width: 31.3%;
+}
+.column3 {
+    width: 10%;
+    margin-left: 50px;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    table-layout: fixed;
+    max-width: 500px;
+}
+p.list {
+    margin-top: 30px;
+    margin-left: 150px;
+    font-size: xx-large;
+    color: #0DB7ED;
+}
+p.skill {
+    /*font-size: 25px;*/    
+    font: medium;
+
+}
+p.jarak {
+    margin-bottom: 95px;
+}
+div.experience #fotocgt, #fotoOh, #fotobem {
+    border-radius: 50%;
+    margin-right: 150px;
+    max-width: 100px;
+    height: 100px;
+    margin-bottom: 5vh;
+    box-shadow: 2px 2px 8px #384D54;
+}
+div.skill #phytonpcn, #javapcn, #htmlpcn {
+    border-radius: 50%;
+    max-width: 200vh;
+    max-height: 200vh;
+    margin-bottom: 5vh;
+    box-shadow: 2px 2px 8px grey;
+}
+.fix, .fix2 {
+    position: fixed;
+    bottom: 25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+.fix2 {
+    text-align: right;
+}
+input[type=Name], [type=Email], [type=username], [type=date], [type=password] {
+    width: 30%;
+    text-align: center;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+button[type=submit]:hover {
+    background: #0DB7ED;
+}
+p.contact {
+    color: #0DB7ED;
+    font: larger;
+}
+div.geser {
+    padding-left: 50vh;
+}
