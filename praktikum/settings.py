@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'praktikum.urls'
+ROOT_URLCONF = 'lab_4.urls'
 
 TEMPLATES = [
     {
