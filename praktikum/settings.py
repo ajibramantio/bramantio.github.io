@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'praktikum.wsgi.application'
+WSGI_APPLICATION = 'lab_4.wsgi.application'
 
 
 # Database
