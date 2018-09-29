@@ -1,5 +1,5 @@
 div.home {
-    background: url(https://image.ibb.co/kzEu9z/belitung1.jpg) fixed;
+    background: url(https://image.ibb.co/kzEu9z/belitung1.jpg)  ;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,13 +8,14 @@ div.home {
 }
 .navbar {
     background-color: rgb(163, 163, 163);
+    z-index: 1;
 }
 @font-face {
     font-family: "Ropa Sans";
     src: url(https://www.wfonts.com/download/data/2016/06/07/ropa-sans/RopaSans-Italic.ttf) format("truetype");
 }
 h3.atas { 
-    padding-top: 25vh;
+    padding-top: 30vh;
     font-family: "Ropa Sans", Verdana, Tahoma;
     text-align: center;
     font-style: italic;
@@ -127,6 +128,7 @@ div.skill #phytonpcn, #javapcn, #htmlpcn {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
+    z-index: 1;
 }
 .fix2 {
     text-align: right;
