@@ -1,0 +1,46 @@
+{% extends 'NavBar.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="scheduless" >
+    <div class="judul">
+        <h1>List of My Schedules<br></h1>
+    </div>
+    <div class="table">
+        <table>
+            {% if schedule %}
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Venue</th>
+                <th>Category</th>
+    
+            </tr>
+    
+    
+            {% for data in schedule %}
+            <tr>
+                <td class="nama">{{ data.nama }}</td>
+                <td class="tanggal">{{ data.tanggal }}</td>
+                <td class="jam">{{ data.jam }}</td>
+                <td class="tempat">{{ data.tempat }}</td>
+                <td class="kategori">{{ data.kategori }}</td>
+            </tr>
+            {% endfor %}
+
+            {% else %}
+            <p>Lagi Gabut</p>
+            {% endif %}
+        </table>
+        <div class="row">
+            <div class="col-6">
+                <form id="scheduleform" action="{% url 'DeleteSched' %}">
+                    <button type="submit" class="btn btn-default">Delete All</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

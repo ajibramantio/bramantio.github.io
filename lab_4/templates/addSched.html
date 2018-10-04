@@ -1,0 +1,17 @@
+{% extends 'NavBar.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="addsched">
+    <h1 style="text-align:center; margin:auto;"><br>Add Schedule</h1>
+
+    <form method="POST" style="text-align:center;" class="post-form" action="{% url 'adding' %}" novalidate>
+        {% csrf_token %}
+        <table border="1">
+        {{ sched.as_p }}
+        </table>
+        <button type="save" class="save btn btn-default">Save</button>
+    </form>
+</div>
+
+{% endblock %}

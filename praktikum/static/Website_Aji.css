@@ -31,7 +31,7 @@ body {
 }
 h1 {
     font-family: "Ropa Sans", Verdana, Tahoma;
-    width: 100vh;
+    width: 100%;
 }
 h1.about {
     text-align: center; 
@@ -95,7 +95,6 @@ p.list {
     color: #0DB7ED;
 }
 p.skill {
-    /*font-size: 25px;*/    
     font: medium;
 
 }
@@ -137,7 +136,16 @@ input[type=Name], [type=Email], [type=username], [type=date], [type=password] {
 button[type=submit]:hover {
     background: #0DB7ED;
 }
+button.save:hover {
+    background: #384D54;
+}
 p.contact {
     color: #0DB7ED;
     font: larger;
+}
+div.addsched, .scheduless {
+    width: 50%;
+    text-align: center;
+    align: center;
+    margin: auto;
 }

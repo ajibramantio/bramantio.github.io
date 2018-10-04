@@ -26,5 +26,5 @@ urlpatterns = [
     re_path(r'^lab-1/', include('lab_1.urls')),
     re_path(r'^lab-2/', include('lab_2.urls')),
     re_path(r'^$', index_lab1, name='index'),
-    re_path(r'^lab_4/', include('lab_4.urls')),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    re_path(r'^lab-4/', include('lab_4.urls'), name='HomePage'),
+]
