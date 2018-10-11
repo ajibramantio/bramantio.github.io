@@ -6,7 +6,7 @@
         <meta charset="uts-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="{% static 'Website_Aji.css' %}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +17,8 @@
         </style>
     </head>
     <body class="jumbo-bg">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-lightgrey">
-            <a class="navbar-brand" href="#home">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-lightgrey" role="navigation">
+            <a class="navbar-brand" href="{% url 'index' %}">
                 <img src="https://image.ibb.co/dMWD2K/Logo_AJ1.png" width="40" height="40" class="d-inline-block align-top" alt="AJ">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -49,7 +49,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'addschedule' %}">Add Schedule</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             Schedule
@@ -58,9 +58,8 @@
                             <a class="dropdown-item" href="{% url 'schedule' %}">My Schedules</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{% url 'addschedule' %}">Add Schedule</a>
-                            <a class="dropdown-item" href="{% url 'adding' %}">Delete Schedule</a>
                         </div>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </nav>

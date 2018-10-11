@@ -10,6 +10,3 @@ class Sched(models.Model):
     jam = models.TimeField()
     tempat = models.CharField(max_length=80)
     kategori = models.CharField(max_length=80)
-
-    def __str__(self):
-        return self.nama

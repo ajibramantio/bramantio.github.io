@@ -23,10 +23,10 @@ h2.atas {
     padding-bottom: 50vh;
 }
 body {
-    background-color: #0DB7ED;
+    background-color: rgb(114, 114, 114);
     width: 100vw;
 }
-.about, div.skill {
+.about, div.skill, .profile {
     text-align: center;
 }
 h1 {
@@ -36,7 +36,7 @@ h1 {
 h1.about {
     text-align: center; 
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-bottom: 3vh;
     color: #384D54;
 }
@@ -133,8 +133,8 @@ input[type=Name], [type=Email], [type=username], [type=date], [type=password] {
     align: center;
     margin: auto;
 }
-button[type=submit]:hover {
-    background: #0DB7ED;
+button[type=submit], [type=sape]:hover {
+    background: #384D54;
 }
 button.save:hover {
     background: #384D54;
@@ -143,9 +143,19 @@ p.contact {
     color: #0DB7ED;
     font: larger;
 }
-div.addsched, .scheduless {
+div.addsched, .scheduless, .addstat, .statuy {
     width: 50%;
     text-align: center;
     align: center;
     margin: auto;
+}
+p.baik {
+    text-align: left;
+    margin-left: 10%;
+}
+div.lab6 {
+    background: url(https://image.ibb.co/eBBP9z/Belitungedited.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }

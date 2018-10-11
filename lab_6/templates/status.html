@@ -1,0 +1,49 @@
+{% extends 'navbarstat.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="lab6">
+    <h1>Halo Apakabar?
+        <br>
+    </h1>
+    <div class="statuy">
+        <div class="table" style="text-align:center;">
+            <table>
+                {% if stats %}
+                <tr>
+                    <th>Status</th>
+                    <th>Keterangan</th>
+
+                </tr>
+
+
+                {% for data in stats %}
+                <tr>
+                    <td class="status">{{ data.status }}</td>
+                    <td class="isi_status">{{ data.isi_status }}</td>
+                </tr>
+                {% endfor %} {% else %}
+                <p class="baik">Aku baik-baik saja</p>
+                {% endif %}
+            </table>
+            <div class="row">
+                <div class="col-6">
+                    <form id="statusform" action="/lab-6/delete">
+                        <button type="submit" href="/delete" class="btn btn-default">Delete All</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="addstat">
+        <form method="POST" class="post-form" action="" novalidate>
+            {% csrf_token %}
+            <table border="1">
+                {{ form }}
+            </table>
+            <button type="sape" style="margin-left:29vh" class="save btn btn-default">Add Status</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

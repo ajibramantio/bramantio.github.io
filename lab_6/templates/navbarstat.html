@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Aji Bramantio | PPW - TDD</title>
+        <meta charset="uts-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'Website_Aji.css' %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div.row {
+                margin-right: 0vh;
+            }
+        </style>
+    </head>
+    <body class="jumbo-bg">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-lightgrey" role="navigation">
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <img src="https://image.ibb.co/dMWD2K/Logo_AJ1.png" width="40" height="40" class="d-inline-block align-top" alt="AJ">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lab-6/">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lab-6/status">Status</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
