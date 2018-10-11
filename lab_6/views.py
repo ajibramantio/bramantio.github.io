@@ -6,10 +6,10 @@ from django.http import HttpResponseRedirect
 # Create your views here.
 response = {}
 def index(request):
-    return render(request, 'status.html', response)
+    return render(request,'status.html', response)
 
 def profile(request):
-    return render(request, 'profile.html', response)
+    return render(request,'profile.html', response)
 
 def addStatus(request):
     if (request.method == 'POST'):

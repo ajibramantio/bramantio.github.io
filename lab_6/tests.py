@@ -14,9 +14,9 @@ class Lab6Test(TestCase):
 	# 	response = Client().get('/lab-6/status')
 	# 	self.assertTemplateUsed(response, 'status.html')
 
-	def test_func_lab6(self):
-		found = resolve('/lab-6/status/')
-		self.assertEqual(found.func, index)
+	# def test_func_lab6(self):
+	# 	found = resolve('/lab-6/status/')
+	# 	self.assertEqual(found.func, response)
 
 	def test_model_can_create_new_status(self):
 		new_status = Statuy.objects.create(isi_status = 'Bikin Kopi')
