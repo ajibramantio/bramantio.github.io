@@ -41,12 +41,12 @@ class Lab6Test(TestCase):
 		self.assertEqual(found.func, profile)
 
 class Lab6_FunctionalTest(TestCase):
-	def setUp(self):
-		chrome_options = Options()
-		self.selenium = webdriver.Chrome(
-			'./chromedriver', chrome_options=chrome_options
-		)
-		super(Lab6_FunctionalTest, self).setUp()
+	# def setUp(self):
+	# 	chrome_options = Options()
+	# 	self.selenium = webdriver.Chrome(
+	# 		'./chromedriver', chrome_options=chrome_options
+	# 	)
+	# 	super(Lab6_FunctionalTest, self).setUp()
 
 	def tearDown(self):
 		self.selenium.quit()
