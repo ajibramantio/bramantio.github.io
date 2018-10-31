@@ -7,7 +7,7 @@
 
     <form method="POST" style="text-align:center;" class="post-form" action="{% url 'adding' %}" novalidate>
         {% csrf_token %}
-        <table border="1">
+        <table border="1" item-width="50%">
         {{ sched.as_p }}
         </table>
         <button type="save" class="save btn btn-default">Save</button>
