@@ -921,16 +921,16 @@ Lebih lengkap mengenai Reponsive Web Design
     
     
     # Create your tests here.
-    class Lab5FunctionalTest(TestCase):
+    class Lab6_FunctionalTest(TestCase):
     
         def setUp(self):
             chrome_options = Options()
             self.selenium  = webdriver.Chrome('./chromedriver', chrome_options=chrome_options)
-            super(Lab5FunctionalTest, self).setUp()
+            super(Lab6_FunctionalTest, self).setUp()
     
         def tearDown(self):
             self.selenium.quit()
-            super(Lab5FunctionalTest, self).tearDown()
+            super(Lab6_FunctionalTest, self).tearDown()
     
         def test_input_todo(self):
             selenium = self.selenium
@@ -1050,7 +1050,7 @@ Cukup kerjakan salah satu nya saja:
 2.  [ ] Implementasikan fungsi delete `todo` untuk menghapus `todo` yang sudah dibuat dengan menekan sebuah button pada  setiap flex-item.
 3.  [ ] Tambahkan efek `hover` untuk _button delete_, sehingga _button delete_ hanya akan tampil ketika salah satu `to do` di `hover`.
 4.  [ ] Buatlah _Functional Test_ dan _Unit Test_ untuk melakukan _Testing_ tombol `delete`. 
-5.  [ ] Masukkan kode berikut kedalam `lab_5/tests.py` class `Lab5FunctionalTest` method `test_input_todo`
+5.  [ ] Masukkan kode berikut kedalam `lab_5/tests.py` class `Lab6_FunctionalTest` method `test_input_todo`
 , lalu _solve_ Test `test_input_todo` yang sudah ditambahkan kode berikut :
     
     ```python
