@@ -40,9 +40,14 @@ class Lab6Test(TestCase):
 		found = resolve('/lab-6/')
 		self.assertEqual(found.func, profile)
 
+
 class Lab6_FunctionalTest(TestCase):
 	def setUp(self):
 		chrome_options = Options()
+		chrome_options.add_argument('--dns-prefetch-disable')
+		chrome_options.add_argument('--no-sandbox')
+		chrome_options.add_argument('--headless')
+		chrome_options.add_argument('disable-gpu')
 		self.selenium = webdriver.Chrome(
 			'./chromedriver', chrome_options=chrome_options
 		)
@@ -64,7 +69,7 @@ class Lab6_FunctionalTest(TestCase):
 		isi.send_keys('Sedang berpikir')
 
 		isi.send_keys(Keys.ENTER)
-		
+
 		self.assertIn('Mengerjakan Lab PPW', selenium.page_source)
 		self.assertIn('Sedang berpikir', selenium.page_source)
-		super(Lab6_FunctionalTest, self).test_input_todo()
+		# super(Lab6_FunctionalTest, self).test_input_todo()
