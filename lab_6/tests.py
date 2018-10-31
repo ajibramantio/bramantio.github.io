@@ -67,3 +67,4 @@ class Lab6_FunctionalTest(TestCase):
 		
 		self.assertIn('Mengerjakan Lab PPW', selenium.page_source)
 		self.assertIn('Sedang berpikir', selenium.page_source)
+		super(Lab6_FunctionalTest, self).test_input_todo()
