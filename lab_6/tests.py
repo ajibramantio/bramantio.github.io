@@ -42,6 +42,7 @@ class Lab6Test(TestCase):
 
 
 class Lab6_FunctionalTest(TestCase):
+
 	def setUp(self):
 		chrome_options = Options()
 		chrome_options.add_argument('--dns-prefetch-disable')
@@ -60,7 +61,7 @@ class Lab6_FunctionalTest(TestCase):
 	def test_input_todo(self):
 		selenium = self.selenium
 
-		selenium.get('http://127.0.0.1:8000/lab-6/status')
+		selenium.get('http://ppw-b-bramantio.herokuapp.com/lab-6/status')
 		status = selenium.find_element_by_id('id_status')
 		isi = selenium.find_element_by_id('id_isi_status')
 		delete = selenium.find_element_by_id('delete_status')
@@ -72,4 +73,23 @@ class Lab6_FunctionalTest(TestCase):
 
 		self.assertIn('Mengerjakan Lab PPW', selenium.page_source)
 		self.assertIn('Sedang berpikir', selenium.page_source)
+		self.assertIn('delete_status', selenium.page_source)
 		# super(Lab6_FunctionalTest, self).test_input_todo()
+
+	# def test_position_and_css_form(self):
+	# 	selenium = self.selenium
+
+	# 	selenium.get('http://ppw-b-bramantio.herokuapp.com/lab-6/status')
+		
+	# 	delete = selenium.find_element_by_id('delete_status')
+	# 	add = selenium.find_element_by_name('Add Status')
+	# 	content = selenium.find_element_by_css_selector('table').value_of_css_property('color')
+
+	# 	self.assertIn('Delete All', selenium.text)
+	# 	self.assertIn('Add Status', selenium.text)
+
+	# 	delete_button_use_class = "btn-default" in delete.get_attribute("class")
+	# 	add_button_use_class = "btn-default" in add.get_attribute("class")
+
+	# 	self.assertTrue(delete_button_use_class)
+	# 	self.assertTrue(add_button_use_class)

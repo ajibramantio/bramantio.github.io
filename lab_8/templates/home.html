@@ -1,0 +1,38 @@
+{% extends 'navbarlab8.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="home">
+    <h1 id="olla">Hello let me introduce my self...</h1>
+    <img id="fotoabout" class="home" src="https://image.ibb.co/bLXA1e/Aji_aboutjpg.jpg" alt="Foto_full_aji">
+    <h2>Bramantio Krisno Aji</h2>
+    <h4>19 Years Old</h4>
+    <p>
+        <strong>i'm just an extraordinary teenager
+            <br>that wanna be a Professional
+            <br>Frontended and Developer.</strong>
+    </p>
+</div>
+<div>
+    <button id="gantiTema" style="margin-bottom:10px;" type="button" onclick="tema()">Change Theme</button>
+</div>
+<div>
+    <button id="acor" class="accordion">My Daily Activity</button>
+    <div class="panel">
+        <p><br>- Undergraduate Student at Faculty of Computer Science Universitas Indonesia<br>- BEM Fasilkom UI 2018 as Staff of Hubungan Masyarakat</p>
+    </div>
+    
+    <button id="acor" class="accordion">Organization and Committee</button>
+    <div class="panel">
+        <p><br>Organizations :<br>- BEM Fasilkom UI 2018 as Staff of Hubungan Masyarakat<br>- Rohani Islam SMAN 81 Jakarta as PIC of Hubungan Masyarakat<br><br>Committee :<br>- Open House Fasilkom UI 2018 as PIC of Equipments<br>- The 25th Computer's Get Together as Staff of Danus<br>- Kounosei no Matsuri as PIC of Security
+        </p>
+    </div>
+    
+    <button id="acor" class="accordion">Achievements</button>
+    <div class="panel">
+        <p><br>2 Gold Medals, 1 Silver Medal, and 1 Bronze Medal on Taekwondo Tournaments</p>
+    </div>
+</div>
+<script rel="stylesheet" type="text/javascript" src="{% static 'js/lab8.js' %}"></script>
+
+{% endblock %}

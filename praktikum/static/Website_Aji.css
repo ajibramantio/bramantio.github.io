@@ -23,7 +23,7 @@ h2.atas {
     padding-bottom: 50vh;
 }
 body {
-    background-color: rgb(114, 114, 114);
+    background-color: rgb(117, 117, 117);
     width: 100vw;
 }
 .about, div.skill, .profile {
@@ -149,16 +149,16 @@ div.addsched, .scheduless, .addstat, .statuy {
     align: center;
     margin: auto;
 }
-p.baik {
-    text-align: left;
-    margin-left: 10%;
-}
 div.lab6 {
-    background: url(https://image.ibb.co/eBBP9z/Belitungedited.jpg);
+    background: url(https://image.ibb.co/kzEu9z/belitung1.jpg) fixed; 
     width: 100%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    padding-bottom: 25%
 }
 table {
+    text-align: center;
     width: 50%;
+    color:rgb(212, 209, 205)
 }
