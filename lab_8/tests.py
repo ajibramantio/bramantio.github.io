@@ -55,5 +55,7 @@ class Lab8FunctionalTest(unittest.TestCase):
                 self.content3 = selenium.find_elements_by_tag_name('h1')
                 # content1 = selenium.find_element_by_xpath("//h1[@id='olla']")
                 self.content2 = selenium.find_element_by_tag_name('body').value_of_css_property('background')
+                self.content4 = selenium.find_element_by_xpath("//button[@id='gantiTema']").click()
                
                 self.assertIn('Hello let me introduce my self...', selenium.page_source)
+                self.assertIn('Bramantio Krisno Aji',selenium.page_source)

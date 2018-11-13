@@ -2,6 +2,7 @@
 {% load staticfiles %}
 {% block content %}
 
+
 <div class="home">
     <h1 id="olla">Hello let me introduce my self...</h1>
     <img id="fotoabout" class="home" src="https://image.ibb.co/bLXA1e/Aji_aboutjpg.jpg" alt="Foto_full_aji">
@@ -15,6 +16,7 @@
 </div>
 <div>
     <button id="gantiTema" style="margin-bottom:10px;" type="button" onclick="tema()">Change Theme</button>
+    
 </div>
 <div>
     <button id="acor" class="accordion">My Daily Activity</button>
@@ -30,9 +32,28 @@
     
     <button id="acor" class="accordion">Achievements</button>
     <div class="panel">
-        <p><br>2 Gold Medals, 1 Silver Medal, and 1 Bronze Medal on Taekwondo Tournaments</p>
+        <!-- <p><br>2 Gold Medals, 1 Silver Medal, and 1 Bronze Medal on Taekwondo Tournaments</p> -->
+        <div class="counter-container">
+            <i class="fa fa-star"></i>:
+            <span class="counters">0</span>
+        </div>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col"> No</th>
+                    <th scope="col"> Title</th>
+                    <th scope="col"> Authors</th>
+                    <th scope="col"> Publisher</th>
+                    <th scope="col"> Published date</th>
+                    <th scope="col">Favourites</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
     </div>
 </div>
+
 <script rel="stylesheet" type="text/javascript" src="{% static 'js/lab8.js' %}"></script>
 
 {% endblock %}
