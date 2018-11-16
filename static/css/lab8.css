@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
+@font-face {
+         font-family: "Ropa Sans";
+         src: url('https://fonts.googleapis.com/css?family=Ropa+Sans');
+         }
 body {
     background: rgb(222,222,222);
     color: #384D54;
@@ -16,6 +19,17 @@ body {
     background: #2D4654; */
 }
 
+#myInput {
+    background-image: url('https://www.vexels.com/vectors/preview/132068/search-icon'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
 .clicked {
     color: #3498db !important;
 }
@@ -26,6 +40,19 @@ body {
     color : #3498db;
     text-align: center;
 }
+.text-query {
+    text-align: center;
+    
+}
+.clickable {
+    color : #3498db;
+    font-family: 'Rasa', serif;
+    font-size : 2rem;
+}
+a:hover {
+    color: #3498db;
+}
+
 
 img.home {
     border-radius: 50%;

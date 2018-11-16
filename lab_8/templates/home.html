@@ -30,26 +30,51 @@
         </p>
     </div>
     
-    <button id="acor" class="accordion">Achievements</button>
+    <button id="acor" class="accordion">Books</button>
     <div class="panel">
         <!-- <p><br>2 Gold Medals, 1 Silver Medal, and 1 Bronze Medal on Taekwondo Tournaments</p> -->
-        <div class="counter-container">
-            <i class="fa fa-star"></i>:
-            <span class="counters">0</span>
+        <!-- <div class="text-center" style="padding-top: 2%;">
+            <input id="myInput" onkeyup="searchbook()" type="text" placeholder="Filter your books here..." value="">
+            <img id="search" onclick="searchbook()" src='https://image.ibb.co/kwVUpf/magnifying-glass.png' style="size:20px,20px;">
+            <br>
+            <button id="search" style="margin-bottom:10px;" type="button" onclick="searchbook()">Search</button>
         </div>
-        <table class="table table-dark">
-            <thead>
-                <tr>
-                    <th scope="col"> No</th>
-                    <th scope="col"> Title</th>
-                    <th scope="col"> Authors</th>
-                    <th scope="col"> Publisher</th>
-                    <th scope="col"> Published date</th>
-                    <th scope="col">Favourites</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+
+
+        <div class="counter-container"><h2><br>Favorito Favorito baby
+            <i class="fa fa-star"></i>:
+            <span class="counters">0</span></h2>
+        </div>
+        <input type="text" id="myInput" onkeyup="search()" placeholder="Search for books.."> -->
+        <div class="contain ">
+            <input type="text" id="search" placeholder="Search.." name="search">
+            <button type="submit" id="searchbutton">
+                <i class="fa fa-search"></i>
+            </button>
+        
+            <h2>Just some star counter
+                <i class="fa fa-star" id="starcounter" style="color:#631731"></i>:
+                <span class="count">0</span>
+            </h2>
+            <div class="table-responsive">
+                <table class="table table-sm">
+                    <thead>
+                        <tr class="text-center">
+                            <th id="number" scope="col">No</th>
+                            <th id="image" scope="col">Image</th>
+                            <th id="title" scope="col">Book Title</th>
+                            <th id="author" scope="col">Authors</th>
+                            <th id="publisher" scope="col">Publisher</th>
+                            <th id="publishdate" scope="col">Published Date</th>
+                            <th id="pagecount" scope="col">Page Count</th>
+                            <th id="add" scope="col">Add to Favorite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
 
     </div>
 </div>
