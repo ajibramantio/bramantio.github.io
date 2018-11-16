@@ -104,7 +104,7 @@ $(document).on('click', '#searchbutton', function () {
         url: "{% url 'data' %}" + "?search=" + search_result,
         datatype: 'json',
         success: function (result) {
-            console.log("test");
+            console.log("ajia");
             var books_object = jQuery.parseJSON(result);
             renderHTML(books_object);
         }
@@ -130,7 +130,7 @@ function renderHTML(data) {
             '<td class= "published">' + published + '</td>' +
             '<td class= "pagecount">' + pagecount + '</td>' +
             '<td class= "country">' + country + '</td>' +
-            '<td>' + '<button id ="star" class = "button"><i class="fas fa-star"></i></button>' + '</td>';
+            '<td>' + '<button id ="star" class = "button"><i class="fa fa-star"></i></button>' + '</td>';
         $('tbody').append(table);
     }
 }
@@ -142,14 +142,14 @@ $(function () {
             counter -= 1;
             console.log(counter);
             $(this).removeClass('clicked');
-            $(this).css("color", "white");
+            $(this).css("color", "black");
             alert("you just removed one book hope u didnt regret it");
 
         } else {
             counter += 1;
             console.log(counter);
             $(this).addClass('clicked');
-            $(this).css("color", "#631731");
+            $(this).css("color", "black");
             alert("book added hope u love it");
         }
         $('.count').html(counter);

@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.shortcuts import render
 from django.http import JsonResponse
 from django.http import HttpResponse
 import urllib.request
@@ -28,11 +27,10 @@ def index(request):
 
 
 def buku(request):
-    try:
+    search = "quilting"
+    if request.GET["search"] != "":
         search = request.GET["search"]
-    except:
-        search = "quilting"
-
+    
     getBooksJson = requests.get("https://www.googleapis.com/books/v1/volumes?q=" + search)
     jsonParsed = json.dumps(getBooksJson.json())
     return HttpResponse(jsonParsed)
