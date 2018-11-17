@@ -35,7 +35,7 @@ function tema() {
         document.body.style.background = "rgb(222,222,222)";
         document.body.style.color = "#384D54";
         document.body.style.fontFamily = "'Ropa Sans', Verdana, Tahoma";
-        document.getElementById("bintang").style.color = "rgb(222, 222, 222)";
+        document.getElementById("bintang").style.color = "#3498d";
         // document.getElementsByClassName("accordion").style.background = "#eee";
     }
 }
@@ -130,7 +130,7 @@ function renderHTML(data) {
             '<td class= "published">' + published + '</td>' +
             '<td class= "pagecount">' + pagecount + '</td>' +
             '<td class= "country">' + country + '</td>' +
-            '<td>' + '<button id ="star" class = "button"><i class="fa fa-star"></i></button>' + '</td>';
+            '<td>' + '<button id ="star" class = "button"><i id="bintang" class="fa fa-star"></i></button>' + '</td>';
         $('tbody').append(table);
     }
 }
@@ -149,7 +149,6 @@ $(function () {
             counter += 1;
             console.log(counter);
             $(this).addClass('clicked');
-            $(this).css("color", "black");
             alert("book added hope u love it");
         }
         $('.count').html(counter);
