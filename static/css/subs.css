@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Ropa Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ropa Sans Regular'), local('RopaSans-Regular'), url(https://fonts.gstatic.com/s/ropasans/v7/EYqxmaNOzLlWtsZSScy6UzNpY5I.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+nav {
+    padding-bottom: 5px;
+}
+body {
+    background: url(https://image.ibb.co/d4dvXK/FULL.jpg) fixed;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #4C4C4C;
+    font-family: "Ropa Sans", Verdana, Tahoma;
+    text-align: center;
+}
+
+/* Subscribe */
+.alert {
+    color: red;
+}
+.container_form {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(229,229,229,0.80);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 640px;
+}
+
+.judul_utama_subscribe {
+    font-family: "Ropa Sans", Verdana, Tahoma;
+    font-size: 50px;
+    margin: 1rem auto;
+}
+
+.form_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 36px auto;
+}
+
+
+input[type=text], input[type=date], input[type=email], input[type=password] {
+    border: 2px solid #dbdbdb;
+    border-radius: 16px;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    font-family: "Ropa Sans", Verdana, Tahoma !important;
+    font-size: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .16);
+}
+
+#submit_subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem ;
+}
+
+
+input[id=submit_subscribe]:disabled{
+    background-color: #fafaff;
+    color: #9B9B9B;
+    font-weight: bold;
+    border: 2px solid #9B9B9B;
+    border-radius: 40px;
+    width: 220px;
+    height: 48px;
+    text-align: center;
+    font-family: "Ropa Sans", Verdana, Tahoma !important;
+    font-size: 20px;
+}
+
+#submit_subscribe:hover:enabled {
+    background-color: #030042;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #030042;
+    border-radius: 40px;
+    width: 220px;
+    height: 48px;
+    text-align: center;
+    font-family: "Ropa Sans", Verdana, Tahoma !important;
+    font-size: 20px;
+}
+
+
+input[id=submit_subscribe] {
+    background-color: white;
+    color: #030042;
+    font-weight: bold;
+    border: 2px solid #030042;
+    border-radius: 40px;
+    width: 220px;
+    height: 48px;
+    text-align: center;
+    font-family: "Ropa Sans", Verdana, Tahoma !important;
+    font-size: 20px;
+}
+
+/* loader */
+#loader {
+    /* background: #cccccc; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #030042;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}

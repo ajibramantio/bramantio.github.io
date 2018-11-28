@@ -16,10 +16,10 @@ Including another URLconf
 from django.conf.urls import include
 from django.urls import re_path
 from django.contrib import admin
-from lab_1.views import index as index_lab1
 from lab_4.views import index as lab_4
 from lab_6.views import index as lab_6
 from lab_8.views import index as lab_8
+from Lab_10.views import subscribe as Lab_10
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,8 +27,10 @@ urlpatterns = [
     re_path(r'^admin/', admin.site.urls),
     re_path(r'^lab-1/', include('lab_1.urls')),
     re_path(r'^lab-2/', include('lab_2.urls')),
-    re_path(r'^$', index_lab1, name='index'),
+    re_path(r'^$', lab_8, name='index'),
     re_path(r'^lab-4/', include('lab_4.urls'), name='HomePage'),
     re_path(r'^lab-6/', include('lab_6.urls'), name='lab-6'),
-    re_path(r'^lab-8/', include('lab_8.urls'), name='lab-8')
+    # re_path(r'^lab-8/', include('lab_8.urls'), name='lab-8'),
+    # path('', include('lab_8.urls')),
+    re_path('Lab_10/', include('Lab_10.urls'), name='Lab_10'),
 ]

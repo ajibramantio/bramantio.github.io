@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/subs.css' %}" />
+{% endblock %}
+{% block content %}
+<div class="container_form">
+    <h1 align="center" class="judul_utama_subscribe">
+        <strong>SUBSCRIBE HERE!</strong>
+    </h1>
+    <div class="form_section">
+        <form class="form_input" method="POST">
+            {% csrf_token %}
+            <div class="form_group">
+                <div id="form_subscribe" class="form_data">
+                    {{ form.nama }}
+                    <div id="form_nama" class="alert">*Name is required</div>
+                </div>
+                <div class="form_data">
+                    {{ form.email }}
+                    <div id="form_email" class="alert">*Valid email is required</div>
+                    <div id="form_email2" class="alert">*Email already registered</div>
+                </div>
+                <div class="form_data">
+                    {{ form.password }}
+                    <div id="form_password" class="alert">*Password is required</div>
+                </div>
+            </div>
+            <div class="button_subscribe">
+                <input class="submit" type="submit" id="submit_subscribe" value="SUBSCRIBE"/>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="gap"><br><br><br></div>
+<div class="container_form" onload="renderResult()">
+    <h1 align="center" class="judul_utama_subscribe">
+        <strong>MY SUBSCRIBERS</strong><br>
+    </h1>
+    <div class="background_register">
+        <div class="list-group" id="subs-list">
+            <!--  <button type="submit" id="unsubs_button" class="btn btn-dark unsub" >Unsubscribe</button> -->
+            <div class="alert alert-danger text-center" id="alert_subs">
+                <!-- <strong>Opps!</strong> Tidak ada Subscriber -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block jquery %}
+<script src="{% static 'js/subs.js' %}" type="text/javascript" rel="script"></script>
+<script src="{% static 'js/loading.js' %}" type="text/javascript" rel="script"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous" style=""></script>
+
+{% endblock %}

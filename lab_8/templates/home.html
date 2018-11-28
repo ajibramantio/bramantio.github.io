@@ -1,8 +1,9 @@
 {% extends 'navbarlab8.html' %}
 {% load staticfiles %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/lab8.css' %}" />
+{% endblock %}
 {% block content %}
-
-
 <div class="home">
     <h1 id="olla">Hello let me introduce my self...</h1>
     <img id="fotoabout" class="home" src="https://image.ibb.co/bLXA1e/Aji_aboutjpg.jpg" alt="Foto_full_aji">
