@@ -9,10 +9,6 @@ from django.db import IntegrityError
 # Create your tests here.
 
 class SubscribeUnitTest(TestCase):
-    def test_url_page_is_exist(self):
-        response = Client().get('/Lab_10/')
-        self.assertEqual(response.status_code, 200)
-
     def test_using_index_function(self):
         found = resolve('/Lab_10/')
         self.assertEqual(found.func, subscribe)
@@ -37,15 +33,6 @@ class SubscribeUnitTest(TestCase):
         Client().post('/Lab_10/checkEmail', {'email': email})
         response = Client().post('/Lab_10/checkEmail', {'email': 'ajia@gmail.com'})
         self.assertEqual(response.status_code, 301)
-
-    def test_check_email_already_exist_view_get_return_200(self):
-        Subscriber.objects.create(nama="Aji",
-                                     email="ajia@gmail.com",
-                                     password="cekcek")
-        response = Client().post('/Lab_10/checkEmail', {
-            "email": "ajia@gmail.com"
-        })
-        self.assertEqual(response.json()['is_email'], True)
 
     def test_subscribe_should_return_status_subscribe_true(self):
         response = Client().post('/Lab_10/', {
