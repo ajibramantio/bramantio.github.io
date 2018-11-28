@@ -70,7 +70,7 @@ $(document).ready(function () {
         var csrftoken = $("[name=csrfmiddlewaretoken]").val();
         $.ajax({
             method: "POST",
-            url: "/Lab_10/checkEmail",
+            url: "/Lab_10/checkEmail/",
             headers: {
                 "X-CSRFToken": csrftoken
             },
@@ -206,6 +206,7 @@ $(document).ready(function () {
     })
 
     $(document).on('click', '.unsub', function () {
+        e.preventDefault();
         $.ajax({
             url: '/Lab_10/get-subs-list/',
             method: 'GET',

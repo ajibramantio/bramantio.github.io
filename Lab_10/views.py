@@ -1,14 +1,9 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .forms import FormSubscribe
+from .forms import FormSubscribe, subs_form
 from .models import Subscriber
 
 from django.http import HttpResponseRedirect
-from django.http import JsonResponse
-from django.core.validators import validate_email
-from django.core.exceptions import ValidationError
-from django.core import serializers
-from django.db import IntegrityError
 from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.

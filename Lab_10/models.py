@@ -12,6 +12,5 @@ class Subscriber(models.Model):
 			"nama": self.nama,
 			"password": self.password,
 		}
-        
     def __str__(self):
         return "{}".format(self.email)

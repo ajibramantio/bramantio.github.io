@@ -36,7 +36,7 @@ class SubscribeUnitTest(TestCase):
         email = "ajia@gmail.com"
         Client().post('/Lab_10/checkEmail', {'email': email})
         response = Client().post('/Lab_10/checkEmail', {'email': 'ajia@gmail.com'})
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 301)
 
     def test_check_email_already_exist_view_get_return_200(self):
         Subscriber.objects.create(nama="Aji",
