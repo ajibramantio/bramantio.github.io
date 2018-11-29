@@ -152,8 +152,8 @@ AUTHENTICATION_BACKENDS = (
 )
 
 LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'indexlab9'
-LOGOUT_REDIRECT_URL = 'indexlab11'
+LOGIN_REDIRECT_URL = 'indexbook'
+LOGOUT_REDIRECT_URL = 'indexlogin'
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '196363550890-6cdrrod6cm0vl298ait0ohjgs2mev069.apps.googleusercontent.com'  # Paste CLient Key
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'PaHfkg35AQfsZH5gWcMrvlNQ'  # Paste Secret Key

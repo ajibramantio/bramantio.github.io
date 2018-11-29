@@ -20,9 +20,9 @@ class Lab11_Test(TestCase):
         response = Client().get('/lab11/book-list/json/')
         self.assertEqual(response.status_code, 200)
 
-    def test_lab11_using_signin_template(self):
+    def test_lab11_using_login_template(self):
         response = Client().get('/lab11/')
-        self.assertTemplateUsed(response, 'signin.html')
+        self.assertTemplateUsed(response, 'login.html')
 
     def test_lab11_using_indexlab11_func(self):
         found = resolve('/lab11/')

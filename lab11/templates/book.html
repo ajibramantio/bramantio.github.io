@@ -6,7 +6,7 @@
         <link href="https://image.ibb.co/mNUJ3V/Press-logo-2017.jpg" rel="icon" type="image/jpg" sizes="16x16" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/lab9.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/lab11.css' %}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
             crossorigin="anonymous">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -21,12 +21,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <meta name="google-signin-client_id" content="893704308133-749oai7dvu9tttd05l2lu0rfe7t0pds2.apps.googleusercontent.com">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/lab11.css' %}">
-        <script src="{% static 'js/lab11.js' %}"></script>
     </head>
     <body onload="myFunction()">
         <div id="loader"></div>
-        <div class="container-fluid h-100">
+        <div style="display:none;" id="myDiv" class="animate-bottom container-fluid h-100">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-sm-11">
                     <div class="row" style="padding-top: 50px;">
@@ -67,8 +65,8 @@
                             <p>
                                 <b>Email</b> : {{ user.email }} </p>
                             <hr style="margin-bottom: 16px;">
-                            <text style="padding-top: -10vh; font-size: 18px;">
-                                <b>Favourite(s)</b> : </text>
+                            <text style="padding-top: -10vh; font-size: 18px; text-align: center;">
+                                <b>Favorito </b><i class="fa fa-star" id="bintang" style="color:#3498db"></i> : </text>
                             <text id="counter" style="margin-top: -10px; font-size: 18px; font-weight: bold">0</text>
                         </div>
                     </div>

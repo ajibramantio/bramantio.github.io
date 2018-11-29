@@ -34,7 +34,7 @@ def like(request):
         response["message"] = len(lst)
         return JsonResponse(response)
     else:
-        return HttpResponse("GET Method not allowed")
+        return HttpResponseRedirect("GET Method not allowed")
 
 @csrf_exempt
 def unlike(request):
@@ -48,7 +48,7 @@ def unlike(request):
         response["message"] = len(lst)
         return JsonResponse(response)
     else:
-        return HttpResponse("GET Method not allowed")
+        return HttpResponseRedirect("GET Method not allowed")
 
 def get_like(request):
     if request.user.is_authenticated:

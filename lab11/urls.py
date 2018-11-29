@@ -6,8 +6,8 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('', lab11.indexlab11, name='indexlab11'),
-    path('book-list/', lab11.index, name='indexlab9'),
+    path('', lab11.indexlab11, name='indexlogin'),
+    path('book-list/', lab11.index, name='indexbook'),
     path('book-list/json/', lab11.booklist, name='books-list'),
     path('login/',  views.LoginView.as_view(), name="login"),
     path('logout/', views.LogoutView.as_view(), {'next_page': settings.LOGOUT_REDIRECT_URL}, name='logout'),
