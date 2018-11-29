@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.http import HttpResponse
+from django.contrib.auth import logout as logout_user
 import urllib.request
 import json
 import requests
@@ -9,6 +10,13 @@ import requests
 response = {}
 def index(request):
     return render(request, 'home.html', response)
+
+def login(request):
+    return render(request, 'login.html', response)
+
+def logout(request):
+    logout_user(request)
+    return redirect("index")
 
 # def book_data(request):
 #     try:

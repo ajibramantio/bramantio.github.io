@@ -206,7 +206,6 @@ $(document).ready(function () {
     })
 
     $(document).on('click', '.unsub', function () {
-        e.preventDefault();
         $.ajax({
             url: '/Lab_10/get-subs-list/',
             method: 'GET',

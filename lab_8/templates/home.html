@@ -1,4 +1,4 @@
-{% extends 'navbarlab8.html' %}
+{% extends 'base.html' %}
 {% load staticfiles %}
 {% block extrahead %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/lab8.css' %}" />
@@ -34,19 +34,14 @@
     <button id="acor" class="accordion">Books</button>
     <div class="panel">
         <!-- <p><br>2 Gold Medals, 1 Silver Medal, and 1 Bronze Medal on Taekwondo Tournaments</p> -->
-        <!-- <div class="text-center" style="padding-top: 2%;">
-            <input id="myInput" onkeyup="searchbook()" type="text" placeholder="Filter your books here..." value="">
-            <img id="search" onclick="searchbook()" src='https://image.ibb.co/kwVUpf/magnifying-glass.png' style="size:20px,20px;">
-            <br>
-            <button id="search" style="margin-bottom:10px;" type="button" onclick="searchbook()">Search</button>
-        </div>
+        {% if user.is_authenticated %}
+            <a href="/logout/" onclick="signOut();">Sign out</a>
+            <p class="display-4">Hello, {{user.first_name}} - ({{ user.username }})</p>
+        {% else %}
+            <a href="{% url 'login' %}">Log in</a>
+        {% endif %}
 
 
-        <div class="counter-container"><h2><br>Favorito Favorito baby
-            <i class="fa fa-star"></i>:
-            <span class="counters">0</span></h2>
-        </div>
-        <input type="text" id="myInput" onkeyup="search()" placeholder="Search for books.."> -->
         <div class="contain ">
             <p></p>
             <input type="text" id="search" placeholder="Search.." name="search">
@@ -80,7 +75,7 @@
 
     </div>
 </div>
-
+{% endblock %}
+{% block jquery %}
 <script rel="stylesheet" type="text/javascript" src="{% static 'js/lab8.js' %}"></script>
-
 {% endblock %}

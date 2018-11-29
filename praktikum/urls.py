@@ -21,6 +21,7 @@ from lab_6.views import index as lab_6
 from lab_8.views import index as lab_8
 from Lab_10.views import subscribe as Lab_10
 from django.conf import settings
+from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
 
 urlpatterns = [
@@ -33,4 +34,7 @@ urlpatterns = [
     # re_path(r'^lab-8/', include('lab_8.urls'), name='lab-8'),
     # path('', include('lab_8.urls')),
     re_path('Lab_10/', include('Lab_10.urls'), name='Lab_10'),
+    re_path('lab11/', include('lab11.urls')),
+    re_path(r'^logout/$', auth_views.LogoutView.as_view(), {'next_page': settings.LOGOUT_REDIRECT_URL}, name='logout'),
+    re_path(r'^login/$', auth_views.LoginView.as_view(), name='login'),
 ]
