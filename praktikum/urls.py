@@ -29,7 +29,7 @@ urlpatterns = [
     re_path(r'^lab-1/', include('lab_1.urls')),
     re_path(r'^lab-2/', include('lab_2.urls')),
     re_path(r'^lab-8/', lab_8, name='index'),
-    re_path(r'^$', include('lab_4.urls'), name='HomePage'),
+    re_path(r'^', include('lab_4.urls'), name='HomePage'),
     re_path(r'^lab-6/', include('lab_6.urls'), name='lab-6'),
     # re_path(r'^lab-8/', include('lab_8.urls'), name='lab-8'),
     # path('', include('lab_8.urls')),
