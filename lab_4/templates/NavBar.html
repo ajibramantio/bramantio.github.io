@@ -17,7 +17,7 @@
         </style>
     </head>
     <body class="jumbo-bg">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-lightgrey" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-default navbar-light sticky-top" role="navigation">
             <a class="navbar-brand" href="{% url 'index' %}">
                 <img src="https://image.ibb.co/dMWD2K/Logo_AJ1.png" width="40" height="40" class="d-inline-block align-top" alt="AJ">
             </a>
@@ -43,22 +43,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'schedule' %}">My Schedule</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'addschedule' %}">Add Schedule</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Schedule
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{% url 'schedule' %}">My Schedules</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{% url 'addschedule' %}">Add Schedule</a>
-                        </div>
+                    <li>
+                        <a class="nav-link"></a>
                     </li>
                 </ul>
             </div>

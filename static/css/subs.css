@@ -18,7 +18,7 @@ body {
     font-family: "Ropa Sans", Verdana, Tahoma;
     text-align: center;
 }
-
+ 
 /* Subscribe */
 .alert {
     color: red;
@@ -48,7 +48,6 @@ body {
     justify-content: center;
     margin: 36px auto;
 }
-
 
 input[type=text], input[type=date], input[type=email], input[type=password] {
     border: 2px solid #dbdbdb;

@@ -1,3 +1,9 @@
+.navbar-default {
+    background-color: lightgrey;
+}
+.nav-link {
+    font-weight: 600;
+}
 div.home {
     background: url(https://image.ibb.co/kzEu9z/belitung1.jpg) fixed;
     width: 100%;
@@ -10,7 +16,7 @@ div.home {
     src: url(https://www.wfonts.com/download/data/2016/06/07/ropa-sans/RopaSans-Italic.ttf) format("truetype");
 }
 h3.atas { 
-    padding-top: 25vh;
+    padding-top: 28vh;
     font-family: "Ropa Sans", Verdana, Tahoma;
     text-align: center;
     font-style: italic;
@@ -63,9 +69,21 @@ div.about #fotoabout {
     text-align: center;
     color: #384D54;
 }
+p.list {
+    text-align: center;
+    margin-top: 30px;
+    font-size: x-large;
+    color: #0DB7ED;
+}
+p.skill {
+    font: bold;
+    font-size: 180%;
+}
+p.jarak {
+    margin-bottom: 95px;
+}
 p {
     margin-top: 40px;
-    /*font-size: 15px;*/
     font: small;
 }
 div.experience, div.bawah {
@@ -88,26 +106,20 @@ h1.experience, h1.register {
 .col-md-4,.col-md-3, .col-md-6{
     text-align: center;
 }
-p.list {
-    text-align: center;
-    margin-top: 30px;
-    font-size: x-large;
-    color: #0DB7ED;
-}
-p.skill {
-    font: medium;
 
-}
-p.jarak {
-    margin-bottom: 95px;
-}
-div.experience #fotocgt, #fotoOh, #fotobem {
+#fotocgt, #fotoOh, #fotobem {
     border-radius: 50%;
     text-align: center;
     max-width: 100px;
     height: 100px;
     margin-bottom: 5vh;
     box-shadow: 2px 2px 8px #384D54;
+}
+#cssLogo, #pyLogo, #psLogo, #javaLogo {
+    text-align: center;
+    max-height: 100px;
+    height: 100px;
+    margin-bottom: 5vh;
 }
 div.skill #phytonpcn, #javapcn, #htmlpcn {
     border-radius: 50%;

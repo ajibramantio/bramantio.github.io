@@ -4,7 +4,7 @@
   font-weight: 400;
   src: local('Ropa Sans Regular'), local('RopaSans-Regular'), url(https://fonts.gstatic.com/s/ropasans/v7/EYqxmaNOzLlWtsZSScy6UzNpY5I.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
+} 
 
 body {
     background: url(https://image.ibb.co/eBBP9z/Belitungedited.jpg) fixed;
@@ -26,7 +26,7 @@ body {
 
 .roundedrec {
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0.1px rgba(116, 116, 116, 0.1);
+    box-shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.1);
     margin-top:20px;
     margin-bottom:20px;
 }
