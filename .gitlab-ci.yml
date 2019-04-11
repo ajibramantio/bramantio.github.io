@@ -20,9 +20,9 @@ UnitTest:
     - python manage.py collectstatic --no-input
     - python manage.py runserver 8000 &
   when: on_success
-  # script:
-  #   - coverage run --include='lab10/*' manage.py test
-  #   - coverage report -m
+  script:
+    - coverage run --include='lab_10/*' manage.py test
+    - coverage report -m
 
 Deployment:
   image: ruby:2.4
