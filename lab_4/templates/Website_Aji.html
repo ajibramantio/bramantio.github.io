@@ -1,199 +1,155 @@
 {% extends 'NavBar.html' %}
 {% load staticfiles %}
 {% block content %}
-        <div class="fix">
-            <a href="https://www.instagram.com/aji_bramantio/">
-                <img style="width:35px;" alt="Instagram" src="https://image.ibb.co/eYhKEz/iglogo.png"> </a>
-            <a href="https://twitter.com/Bramantio_Aji">
-                <img style="width:35px;" alt="Twitter" src="https://image.ibb.co/n10T7K/twitterlogo.png"> </a>
-            <a href="https://www.facebook.com/aji.bramantio.3">
-                <img style="width:35px;" alt="Facebook" src="https://image.ibb.co/ic787K/fblogo.png"> </a>
-            <a href="https://www.linkedin.com/in/bramantio-krisno-aji-6a3037171/">
-                <img style="width:35px;" alt="LinkedIn" src="https://image.ibb.co/gFDC1e/linkedinlogo.png"> </a>
-            <div class="fix2">
-                <a href="#home">
-                    <img style="width:35px;" alt="home" src="https://image.ibb.co/bsYn1e/logohome.png"> </a>
-                <a href="#about">
-                    <img style="width:35px;" alt="about" src="https://image.ibb.co/cnd9Ez/aboutlogo.png"> </a>
-                <a href="#experience">
-                    <img style="width:35px;" alt="experience" src="https://image.ibb.co/jOMwuz/experiencelogo.png"> </a>
-                <a href="#skill">
-                    <img style="width:35px;" alt="skill" src="https://image.ibb.co/i2LpEz/skilllogo.png"> </a>
-                <a href="#contact">
-                    <img style="width:35px;" alt="contact" src="https://image.ibb.co/eNgUWe/clogo.png"> </a>
+    <div class="fix">
+        <a href="https://www.instagram.com/aji_bramantio/">
+            <img style="width:50px;" alt="Instagram" src="https://image.ibb.co/eYhKEz/iglogo.png">
+        </a>
+        <a href="https://twitter.com/Bramantio_Aji">
+            <img style="width:50px;" alt="Twitter" src="https://image.ibb.co/n10T7K/twitterlogo.png">
+        </a>
+        <a href="https://www.facebook.com/aji.bramantio.3">
+            <img style="width:50px;" alt="Facebook" src="https://image.ibb.co/ic787K/fblogo.png">
+        </a>
+        <a href="https://www.linkedin.com/in/bramantio-krisno-aji-6a3037171/">
+            <img style="width:50px;" alt="LinkedIn" src="https://image.ibb.co/gFDC1e/linkedinlogo.png">
+        </a>
+    </div>
+    <div id="home" class="home">
+        <div class="hello">
+            <h3 class="atas">Hello, My Name is</h3>
+            <h2 class="atas">BRAMANTIO KRISNO AJI</h2>
+        </div>
+    </div>
+    <div id="about" class="about">
+        <h1 class="about">About</h1>
+        <div class="line"></div>
+        <img id="fotoabout" class="about" src="https://image.ibb.co/bLXA1e/Aji_aboutjpg.jpg" alt="Foto_full_aji">
+        <h2 class="txt">Bramantio Krisno Aji</h2>
+        <p class="txt" style="font-size: 18px;">
+            <strong>I am a 19-years-old Computer Science Student
+                <br>with dreams of contributing to the betterment
+                <br>of the information industry in Indonesia.</strong>
+        </p>
+        <p class="jarak"></p>
+    </div>
+    <div id="experience" class="experience container-fluid">
+        <h1 class="experience">Experience</h1>
+        <h4 class="experience">Things i've been do in campus
+            <br>
+            <br>
+        </h4>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p class="list">Deputy of Public Relation<br>BEM Fasilkom UI 2019</p>
             </div>
-        </div>
-        <div id="home" class="home">
-            <div class="hello">
-                <h3 class="atas">Hello, My Name is</h3>
-                <h2 class="atas">BRAMANTIO KRISNO AJI</h2>
+            <div class="col-md-3">
+                <img id="fotobem" class="experience" src="https://image.ibb.co/gDRwRe/logo_bem.png" alt="Logo BEM Fasilkom 19">
             </div>
+            <div class="col-md-3"></div>
         </div>
-        <div id="about" class="about">
-            <h1 class="about">About</h1>
-            <div class="line"></div>
-            <img id="fotoabout" class="about" src="https://image.ibb.co/bLXA1e/Aji_aboutjpg.jpg" alt="Foto_full_aji">
-            <h2 class="txt">Bramantio Krisno Aji</h2>
-            <h4 class="txt">19 Years Old</h4>
-            <p class="txt">
-                <strong>i'm just an extraordinary teenager
-                    <br>that wanna be a Professional
-                    <br>Frontended and Developer.</strong>
-            </p>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p class="list">Staff of Public Relation<br>BEM Fasilkom UI 2018</p>
+            </div>
+            <div class="col-md-3">
+                <img id="fotobem" class="experience" src="https://image.ibb.co/gDRwRe/logo_bem.png" alt="Logo BEM Fasilkom 18">
+            </div>
+            <div class="col-md-3"></div>
         </div>
-        <div id="experience" class="experience container-fluid">
-            <h1 class="experience">Experience</h1>
-            <h4 class="experience">Things i've been do in campus
-                <br>
-                <br>
-            </h4>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p class="list">Head of Equipments<br>Open House Fasilkom UI 2018</p>
+            </div>
+            <div class="col-md-3">
+                <img id="fotoOh" class="experience" src="https://image.ibb.co/jDJ4CK/OH.jpg" alt="Logo OH Fasilkom 18">
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <div id="skill" class="skill">
+        <h1 class="skill">Skill</h1>
+        <div style="font-size: 180%;">
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
-                    <p class="list">Deputy of Public Relation<br>BEM Fasilkom UI 2019</p>
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <p>Public Speaking</p>
                 </div>
-                <div class="col-md-3">
-                    <img id="fotobem" class="experience" src="https://image.ibb.co/gDRwRe/logo_bem.png" alt="Logo BEM Fasilkom 19">
+                <div class="col-md-2">
+                    <img id="psLogo" class="skill" src="https://i.ibb.co/brSD0fp/publicspeaking.png" alt="pslogo">
                 </div>
-                <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <p>HTML</p>
+                </div>
+                <div class="col-md-2">
+                    <img id="cssLogo" class="skill" src="https://i.ibb.co/NCKkQbf/html-5-logo.png" alt="csslogo">
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
-                    <p class="list">Staff of Public Relation<br>BEM Fasilkom UI 2018</p>
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <p>Python</p>
                 </div>
-                <div class="col-md-3">
-                    <img id="fotobem" class="experience" src="https://image.ibb.co/gDRwRe/logo_bem.png" alt="Logo BEM Fasilkom 18">
+                <div class="col-md-2">
+                    <img id="pyLogo" class="skill" src="https://i.ibb.co/XXGFCbt/pythonlogo.png" alt="pylogo">
                 </div>
-                <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <p>CSS</p>
+                </div>
+                <div class="col-md-2">
+                    <img id="cssLogo" class="skill" src="https://i.ibb.co/ckmhKGL/css-svg.png" alt="csslogo">
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
-                    <p class="list">Head of Equipments<br>Open House Fasilkom UI 2018</p>
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <p>Java</p>
                 </div>
-                <div class="col-md-3">
-                    <img id="fotoOh" class="experience" src="https://image.ibb.co/jDJ4CK/OH.jpg" alt="Logo OH Fasilkom 18">
-                </div>
-                <div class="col-md-3"></div>
-            </div>
-        </div>
-        <div id="skill" class="skill">
-            <h1 class="skill">Skill</h1>
-            <div style="font-size: 180%;">
-                <div class="row">
-                    <div class="col-md-3">
-                        <p>Public Speaking</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img id="psLogo" class="skill" src="https://i.ibb.co/brSD0fp/publicspeaking.png" alt="pslogo">
-                    </div>
-                    <div class="col-md-3">
-                        <p>HTML</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img id="cssLogo" class="skill" src="https://i.ibb.co/NCKkQbf/html-5-logo.png" alt="csslogo">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <p>Python</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img id="pyLogo" class="skill" src="https://i.ibb.co/XXGFCbt/pythonlogo.png" alt="pylogo">
-                    </div>
-                    <div class="col-md-3">
-                        <p>CSS</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img id="cssLogo" class="skill" src="https://i.ibb.co/ckmhKGL/css-svg.png" alt="csslogo">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <p>Java</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img id="javaLogo" class="skill" src="https://i.ibb.co/yQJq2Bj/java-logo.png" alt="javalogo">
-                    </div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <img id="javaLogo" class="skill" src="https://i.ibb.co/yQJq2Bj/java-logo.png" alt="javalogo">
                 </div>
             </div>
-            <p class="jarak"></p>
         </div>
-        <div id="contact" class="bawah">
-            <div class="contact">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="contact">Contact</h1>
-                        <p class="contact">
-                            bramantio.krisno@ui.ac.id
-                            <br>bramantioaji@gmail.com
-                            <br>+62818116158
-                            <br>
-                            <br>
-                        </p>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-1">
-                                <a href="https://www.instagram.com/aji_bramantio/">
-                                    <img style="width: 10vh;" alt="Instagram" src="https://image.ibb.co/eYhKEz/iglogo.png"> </a>
-                            </div>
-                            <div class="col-md-1">
-                                <a href="https://twitter.com/Bramantio_Aji">
-                                    <img style="width: 10vh;" alt="Twitter" src="https://image.ibb.co/n10T7K/twitterlogo.png"> </a>
-                            </div>
-                            <div class="col-md-1">
-                                <a href="https://www.facebook.com/aji.bramantio.3">
-                                    <img style="width: 10vh;" alt="Facebook" src="https://image.ibb.co/ic787K/fblogo.png"> </a>
-                            </div>
-                            <div class="col-md-1">
-                                <a href="https://www.linkedin.com/in/bramantio-krisno-aji-6a3037171/">
-                                    <img style="width: 10vh;" alt="LinkedIn" src="https://image.ibb.co/gFDC1e/linkedinlogo.png"> </a>
-                            </div>
+        <p class="jarak"></p>
+    </div>
+    <div id="contact" class="bawah">
+        <div class="contact" style="padding-bottom: 2%;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="contact">Contact</h1>
+                    <p class="contact">
+                        bramantio.krisno@ui.ac.id
+                        <br>bramantioaji@gmail.com
+                        <br>+62818116158
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-1">
+                            <a href="https://www.instagram.com/aji_bramantio/">
+                                <img style="width: 10vh;" alt="Instagram" src="https://image.ibb.co/eYhKEz/iglogo.png"> </a>
+                        </div>
+                        <div class="col-md-1">
+                            <a href="https://twitter.com/Bramantio_Aji">
+                                <img style="width: 10vh;" alt="Twitter" src="https://image.ibb.co/n10T7K/twitterlogo.png"> </a>
+                        </div>
+                        <div class="col-md-1">
+                            <a href="https://www.facebook.com/aji.bramantio.3">
+                                <img style="width: 10vh;" alt="Facebook" src="https://image.ibb.co/ic787K/fblogo.png"> </a>
+                        </div>
+                        <div class="col-md-1">
+                            <a href="https://www.linkedin.com/in/bramantio-krisno-aji-6a3037171/">
+                                <img style="width: 10vh;" alt="LinkedIn" src="https://image.ibb.co/gFDC1e/linkedinlogo.png"> </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="register">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="register">Register Account</h1>
-                    </div>
-    
-                </div>
-                <form class="regisform" style="text-align: center;" action="">
-                    <div class="form-group col-md-12">
-                        <label for="InputName">Name</label>
-                        <input type="Name" class="form-control" id="InputName" aria-describedby="emailHelp" placeholder="Enter Name Here">
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="InputEmail">Email address</label>
-                        <input type="email" class="form-control" id="InputEmail" aria-describedby="nameHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="InputUsername">Username</label>
-                        <input type="username" class="form-control" id="InputUsername" aria-describedby="usernameHelp" placeholder="Enter Username">
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="date-input" class="col-2 col-form-label">Date</label>
-                        <input type="date" class="form-control" id="InputDate">
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="InputPassword">Password</label>
-                        <input type="password" class="form-control" id="InputPassword" placeholder="Password">
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="InputConfirmPassword">Confirmation Password</label>
-                        <input type="password" class="form-control" id="InputConfirmPassword" placeholder="Confirmation Password">
-                    </div>
-                    <button type="submit" class="btn btn-primary" onclick="" href="#register">Submit</button>
-                </form>
-            </div>
         </div>
-
+    </div>
 {% endblock %}
